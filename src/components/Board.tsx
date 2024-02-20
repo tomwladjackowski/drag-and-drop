@@ -10,6 +10,7 @@ const Board = () => {
 
   useEffect(() => {
     hasChecked && localStorage.setItem("cards", JSON.stringify(cards));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cards])
 
   useEffect(() => {
