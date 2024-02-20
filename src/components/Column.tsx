@@ -61,22 +61,8 @@ const Column = ({title, headingColor, column, cards, setCards}: ColumnProps) => 
   };
 
   const handleDragState = (e:React.MouseEvent, card: ICard) => {
-    console.log(e);
-    console.log(card);
-    // if (e instanceof React.DragEvent) {
-      (e as React.DragEvent).dataTransfer.setData("cardId", card.id)
-    // }
-    
+    (e as React.DragEvent).dataTransfer.setData("cardId", card.id)
   };
-
-  // const handleDragState = (card: Card) => (e:React.MouseEvent<Element, MouseEvent>) => {
-  //   console.log(e);
-  //   console.log(card);
-  //   // if (e instanceof React.DragEvent) {
-  //     (e as React.DragEvent).dataTransfer.setData("cardId", card.id)
-  //   // }
-    
-  // };
 
   const handleDragLeave = () => {
     setActive(false);

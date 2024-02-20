@@ -14,6 +14,7 @@ const Card = ({ id, title, column, handleDragState }: CardProps) => {
         layout
         layoutId={id}
         draggable="true"
+        //The onDragStart function gets its types from framer-motion and does not accept typing the event as React.DragEvent
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         onDragStart={(e: any) => handleDragState(e, {title, id, column})}
         className='cursor-grab rounded border border-neutral-700 bg-neutral-800 p-3 active:cursor-grabbing'
