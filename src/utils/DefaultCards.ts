@@ -1,6 +1,6 @@
-import { Card } from "../utils/types"
+import { ICard } from "../utils/types"
 
-const DEFAULT_CARDS: Card[] = [
+const DEFAULT_CARDS: ICard[] = [
   // BACKLOG
   { title: "Look into render bug in dashboard", id: "1", column: "backlog" },
   { title: "SOX compliance checklist", id: "2", column: "backlog" },
